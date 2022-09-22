@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 
@@ -15,8 +16,10 @@ body{
 }
 main{
     display: flex;
-    flex-wrap: wrap;
+    
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
@@ -28,9 +31,57 @@ header{
     z-index: 10;
     background-color: black;
 }
+@media screen and (max-width:740px) {
+   
+    header{
+
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        display: flex;
+        display: none;
+    }
+    .content{
+        display: flex;
+        border: 2px solid white;
+justify-content: center;
+text-align: center;
+        
+        background-color: aliceblue;
+        /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1244837.jpg&f=1&nofb=1); */
+        /* background-size: contain; */
+        /* background-repeat:no-repeat ; */
+        /* background-position:;   */
+        
+    }
+    .contenttext{
+            background-color: aqua;
+            display: flex;
+
+            flex-direction: column;
+        /* margin-top: 150px; */
+            /* margin-left: 80px; */
+            /* width: 80vw; */
+            /* height:500vh; */
+        }
+        .content .heading{
+            font-size: 100px;
+            font-weight: 1000;
+            
+        
+        }
+        .paragraph
+        {   margin-top: 19px;
+            
+            font-size: 20px;
+            font-weight: bold;
+        }
+}
 
 nav ul{
     display: flex;
+    display: none;
     justify-content: right;
     margin-top: 8px;
     padding-right: 25px;
@@ -117,14 +168,14 @@ margin-top: 150px;
 .plan{
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-evenly;
     
     
     
     
     color: azure;
-    height: 300px;
+    /* height: 300px; */
 }
 .box1{
     width: 350px;
@@ -202,7 +253,7 @@ button:hover{
 .featurebox{
     
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
     /* border: 0.3px solid red; */
     /* height: fit-content; */
     flex-direction: column;
@@ -247,7 +298,53 @@ footer p{
     
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:740px){
+        .plan{
+            flex-direction: column;
+            margin-top: 350px;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 10px;
+        }
+        #plantitle{
+            /* margin-top:; */
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .features{
+            margin:0 0 0 0;
+            grid-template-columns: 1fr 1fr;
+            padding: 20px 15px;
+        }
+        .featurebox img{
+            height: 150px;
+            width: 150px;
+            padding:25px;
+            margin: auto;
+            /* background-color: aliceblue; */
+        }
+        box1{
+            width: 250px;
+            padding-top: 16px;
+            /* border:1px solid red; */
+            
+        }
+        .box3{
+            width:250px;
+            padding-top: 16px;
+            /* border:1px solid red; */
+            
+        }
+        .box2{
+            padding-top: 16px;
+            width: 250px;
+            /* border:1px solid red; */
         
+        }
     
 }
