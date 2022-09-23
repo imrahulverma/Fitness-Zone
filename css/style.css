@@ -395,7 +395,7 @@ footer p {
         color: tomato;}
 
     #menubtn:checked ~ nav ul{
-        top: 100px;
+        top: 82px;
         z-index: 100;
         left: 0;
         transition: 0.3s all ease-in-out;
