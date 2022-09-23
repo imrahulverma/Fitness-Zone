@@ -366,7 +366,7 @@ footer p {
 
     }
     header {
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
 
         flex-direction: column;
         /* height: 100px; */
