@@ -1,28 +1,32 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 
 }
-body{
-    
-  
-    width: 100vw;    
+
+body {
+
+
+
+    width: 100vw;
+    margin: auto;
     background-color: black;
 
-    
-   
+
+
 }
-main{
+
+main {
     display: flex;
-    
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -31,55 +35,63 @@ header{
     z-index: 10;
     background-color: black;
 }
+
 @media screen and (max-width:740px) {
-   
-    header{
+
+    header {
 
         flex-direction: column;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         display: flex;
         display: none;
     }
-    .content{
+
+    .content {
         display: flex;
-        border: 2px solid white;
-justify-content: center;
-text-align: center;
-        
-        background-color: aliceblue;
+        /* border: 2px solid white; */
+        justify-content: center;
+        text-align: center;
+        /* width: 90%; */
+        /* height: 500px; */
+        margin: auto;
+
+        /* background-color: aliceblue; */
         /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1244837.jpg&f=1&nofb=1); */
         /* background-size: contain; */
         /* background-repeat:no-repeat ; */
         /* background-position:;   */
+
+    }
+
+    .contenttext {
+        /* background-color: aqua; */
+        display: flex;
+        /* border: 2px solid red; */
+        width: 85%;
+        height: 80%;
+        flex-direction: column;
         
     }
-    .contenttext{
-            background-color: aqua;
-            display: flex;
 
-            flex-direction: column;
-        /* margin-top: 150px; */
-            /* margin-left: 80px; */
-            /* width: 80vw; */
-            /* height:500vh; */
-        }
-        .content .heading{
-            font-size: 100px;
-            font-weight: 1000;
-            
-        
-        }
-        .paragraph
-        {   margin-top: 19px;
-            
-            font-size: 20px;
-            font-weight: bold;
-        }
+    .content .heading {
+        font-size: 100px;
+        font-weight: 1000;
+
+
+    }
+
+    .paragraph {
+        margin-top: 19px;
+
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
-nav ul{
+nav ul {
     display: flex;
     display: none;
     justify-content: right;
@@ -87,15 +99,16 @@ nav ul{
     padding-right: 25px;
 }
 
-li{
+li {
     list-style: none;
-    padding: 10px ;
-    margin-right:20px;
-    
-    
+    padding: 10px;
+    margin-right: 20px;
+
+
 }
-nav ul li a{
-    padding:5px 10px 1px 10px ;
+
+nav ul li a {
+    padding: 5px 10px 1px 10px;
     letter-spacing: 1px;
     font-size: 20px;
     text-decoration: none;
@@ -103,127 +116,146 @@ nav ul li a{
     font-weight: 600;
     /* background-color: aqua */
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: tomato;
     font-size: 20.5px;
 }
-.active{
+
+.active {
     border-bottom: 2px solid tomato;
     color: tomato;
-    
+
 }
-.active a{
-    color :tomato;
+
+.active a {
+    color: tomato;
 }
-.logo img{
+
+.logo img {
     height: 70px;
     margin-top: 10px;
     margin-left: 10px;
 }
 
 
-.content{
-height: 80vh;
+.content {
+    height: 400px;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1244837.jpg&f=1&nofb=1);
     background-size: cover;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     /* background-position:;   */
     width: 100vw;
 }
-.contenttext{
-margin-top: 150px;
-    margin-left: 80px;
-    width: 40vw;
-    height: 40vh;
+
+.contenttext {
+    margin-top: 140px;
+    margin-right: 60px;
+    width: 70%;
+    /* height: 40%; */
 }
-.content .heading{
+
+.content .heading {
     font-size: 28px;
     font-weight: 1000;
-    
+
 
 }
-.paragraph
-{   margin-top: 19px;
-    
+
+.paragraph {
+    margin-top: 19px;
+
     font-size: 20px;
     font-weight: bold;
 }
 
-.white{
+.white {
     color: white;
 }
-.tomato
-{
+
+.tomato {
     color: tomato;
-    
+
 }
-#plantitle{
-   color: white;
-   text-align: center;
-   font-size: 28px;
-   font-weight: 600;
-   margin-top: 100px;
-   background-color: #1a1a1a;
+
+#plantitle {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 100px;
+    background-color: #1a1a1a;
 }
-.plan{
+
+.plan {
     padding: 20px;
     display: flex;
-    
+
     justify-content: space-evenly;
-    
-    
-    
-    
+
+
+
+
     color: azure;
     /* height: 300px; */
 }
-.box1{
+
+.box1 {
     width: 350px;
     padding-top: 16px;
     /* border:1px solid red; */
-    
+
 }
-.box3{
+
+.box3 {
     width: 350px;
     padding-top: 16px;
     /* border:1px solid red; */
-    
+
 }
-.box2{
+
+.box2 {
     padding-top: 16px;
     width: 350px;
     /* border:1px solid red; */
 
 }
-.priceboxhov:hover{
+
+.priceboxhov:hover {
     background-color: #1a1a1a;
 }
-.planhead{
+
+.planhead {
     color: white;
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
 }
-.price{
+
+.price {
     color: white;
     text-align: center;
     margin-top: 20px;
 }
-.price span{
-    color:red;
+
+.price span {
+    color: red;
     font-size: 35px;
     font-weight: bolder;
 }
-.plancontent{
+
+.plancontent {
     text-align: center;
     margin-top: 20px;
-    
-}
-.plancontent ul{
 
-    list-style-image:url(img/tick.png);
 }
-button{
+
+.plancontent ul {
+
+    list-style-image: url(img/tick.png);
+}
+
+button {
     background-color: tomato;
     color: white;
     height: 30px;
@@ -235,25 +267,27 @@ button{
     border-radius: 15px;
     width: 80px;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     height: 31px;
     width: 82px;
 }
 
-.features{
+.features {
     display: grid;
     margin: 30px 120px 30px 120px;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 15px;
 
 
 }
-.featurebox{
-    
-  display: flex;
-  /* flex-wrap: wrap; */
+
+.featurebox {
+
+    display: flex;
+    /* flex-wrap: wrap; */
     /* border: 0.3px solid red; */
     /* height: fit-content; */
     flex-direction: column;
@@ -261,26 +295,31 @@ button:hover{
     align-content: center;
 
 }
-.featurebox:hover{
+
+.featurebox:hover {
     background-color: #1a1a1a;
 }
-.featurebox img{
+
+.featurebox img {
     height: 200px;
     width: 200px;
     padding: 40px;
     margin: auto;
     /* background-color: aliceblue; */
 }
-.featurebox p{
+
+.featurebox p {
     color: red;
     font-size: 18px;
     text-align: center;
 }
-.featurebox .featureboxp{
+
+.featurebox .featureboxp {
     color: white;
     font-size: 14px;
     padding: 5px;
 }
+
 footer {
     display: flex;
     background-color: #111;
@@ -289,62 +328,73 @@ footer {
     justify-content: center;
     align-items: center;
 }
-footer p{
+
+footer p {
     color: white;
     opacity: 100%;
     /* position: relative; */
     align-items: center;
     font-size: 18px;
-    
+
 }
 
-@media screen and (max-width:740px){
-        .plan{
-            flex-direction: column;
-            margin-top: 350px;
-            /* justify-content: center; */
-            align-items: center;
-            padding: 10px;
-        }
-        #plantitle{
-            /* margin-top:; */
-        }
-        main{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .features{
-            margin:0 0 0 0;
-            grid-template-columns: 1fr 1fr;
-            padding: 20px 15px;
-        }
-        .featurebox img{
-            height: 150px;
-            width: 150px;
-            padding:25px;
-            margin: auto;
-            /* background-color: aliceblue; */
-        }
-        box1{
-            width: 250px;
-            padding-top: 16px;
-            /* border:1px solid red; */
-            
-        }
-        .box3{
-            width:250px;
-            padding-top: 16px;
-            /* border:1px solid red; */
-            
-        }
-        .box2{
-            padding-top: 16px;
-            width: 250px;
-            /* border:1px solid red; */
+@media screen and (max-width:740px) {
+    .plan {
+        flex-direction: column;
+        /* margin-top: 350px; */
+        /* justify-content: center; */
+        align-items: center;
+        padding: 10px;
+        width: 90%;
+    }
+
+    #plantitle {
+       width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .features {
+        margin: 0 0 0 0;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 15px;
+    }
+
+    .featurebox img {
+        height: 150px;
+        width: 80%;
+        /* width: 150px; */
+        padding: 25px;
+        margin: auto;
+        /* background-color: aliceblue; */
+    }
+
+    .box1 {
+        width: 80%;
+        padding-top: 16px;
+        /* border:1px solid red; */
         
-        }
+    }
     
+    .box3 {
+        width: 250px;
+        width: 80%;
+        padding-top: 16px;
+        /* border:1px solid red; */
+
+    }
+
+    .box2 {
+        padding-top: 16px;
+        width: 250px;
+        /* border:1px solid red; */
+
+    }
+
 }
