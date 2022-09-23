@@ -379,10 +379,16 @@ footer p {
         margin-top: 0px;
         flex-direction: column;
         transition: 0.4s all ease-in-out;
+        border-bottom: 1px solid #1a1a1a;
     }
     nav ul li{
         width: 100%;
+        line-height: 40px;
+        border-top: 1px solid #1a1a1a;
         /* background-color: aliceblue; */
+    }
+    nav ul li a{
+        font-size:18px ;
     }
     .active {
         border-bottom: 0px solid tomato;
