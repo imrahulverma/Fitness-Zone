@@ -373,7 +373,8 @@ footer p {
     nav ul{
         width: 100%;
         position: absolute;
-        top: 0;
+        left:-100%;
+        top: 100px;
         background-color: black;
         margin-top: 0px;
         flex-direction: column;
