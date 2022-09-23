@@ -55,14 +55,11 @@ header {
         justify-content: center;
         text-align: center;
         /* width: 90%; */
-        /* height: 500px; */
+        /* height: 70vh; */
         margin: auto;
+        background-position: center;
 
-        /* background-color: aliceblue; */
-        /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1244837.jpg&f=1&nofb=1); */
-        /* background-size: contain; */
-        /* background-repeat:no-repeat ; */
-        /* background-position:;   */
+        
 
     }
 
@@ -73,6 +70,9 @@ header {
         width: 85%;
         height: 80%;
         flex-direction: column;
+        margin-top: 140px;
+    margin-right: 60px;
+    /* width: 70%; */
         
     }
 
@@ -140,7 +140,7 @@ nav ul li a:hover {
 
 
 .content {
-    height: 400px;
+    height: 500px;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1244837.jpg&f=1&nofb=1);
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,9 +150,9 @@ nav ul li a:hover {
 
 .contenttext {
     margin-top: 140px;
-    margin-right: 60px;
-    width: 70%;
-    /* height: 40%; */
+    margin-left: 60px;
+    width: 40%;
+    height: 40%;
 }
 
 .content .heading {
@@ -178,13 +178,14 @@ nav ul li a:hover {
 
 }
 
-#plantitle {
+.boxtitle {
     color: white;
     text-align: center;
     font-size: 28px;
     font-weight: 600;
     margin-top: 100px;
     background-color: #1a1a1a;
+    width: 100%;
 }
 
 .plan {
@@ -348,7 +349,7 @@ footer p {
         width: 90%;
     }
 
-    #plantitle {
+    .boxtitle {
        width: 100%;
     }
 
