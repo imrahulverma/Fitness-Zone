@@ -369,6 +369,8 @@ footer p {
         /* background-color: aliceblue; */
 
         flex-direction: column;
+        position: sticky;
+        top: 0;
         /* height: 100px; */
     }
 
@@ -392,6 +394,7 @@ footer p {
         /* top: -20px; */
         width: 100%;
         background-color: #1a1a1a;
+        
       
         /* display: none; */
     }
@@ -404,6 +407,7 @@ footer p {
         margin: auto;
         background-position: center;
         background-size: cover;
+        height: 450px;
 
         
 
