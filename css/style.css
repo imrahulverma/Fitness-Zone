@@ -7,7 +7,7 @@
 }
 
 body,html {
-    width: 98vw;
+    width: 90vw;
     margin: auto;
     background-color: black;
 }
@@ -143,6 +143,7 @@ nav ul li a:hover {
 }
 
 .plan {
+    
     margin-top: 30px;
     padding-top: 30px;
     padding: 20px;
@@ -155,6 +156,7 @@ nav ul li a:hover {
 .priceboxhov{
     padding-top: 40px;
     padding-bottom: 40px;
+  
 }
 .priceboxhov:hover{
    
@@ -282,6 +284,39 @@ button:hover {
     font-size: 14px;
     padding: 5px;
 }
+.trainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 25px;
+    /* background-color: beige; */
+    
+}
+.trainerprofile img{
+    /* height: 20rem; */
+    width: 17rem;
+    /* margin-bottom: 72px; */
+}
+
+.trainerprofile .share a{
+    color: white;
+}
+.trainercontent{
+    position: relative;
+   visibility: hidden;
+    padding-top: 10px;
+    text-align: center;
+    /* margin-top: 0; */
+    color: white;
+    transition: 0.2s all ease-in-out;
+    top: -72px;
+    background-color: rgba(1, 1, 1,0.6);
+
+}
+.trainerprofile:hover .trainercontent{
+    visibility: visible;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
 footer {
     display: flex;
@@ -385,14 +420,26 @@ footer p {
         width: 100%;
         line-height: 40px;
         border-top: 1px solid #1a1a1a;
+        
         /* background-color: aliceblue; */
     }
     nav ul li a{
+        width: 100%;
+        line-height: 40px;
+        height: 40px;
+        color: white;
         font-size:18px ;
+    }
+    nav ul li:hover{
+        background-color: red;
+    }
+    nav ul li a:hover{
+        color:white;
     }
     .active {
         border-bottom: 0px solid tomato;
-        color: tomato;}
+        color: tomato;
+    }
 
     #menubtn:checked ~ nav ul{
         top: 82px;
@@ -404,6 +451,27 @@ footer p {
         /* display: flex; */
         
         /* transition: 0.5s all ease-in-out; */
+    }
+
+    .trainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* background-color: antiquewhite; */
+        -ms-grid-row-align: center; 
+      
+        
+    }
+    .trainerprofile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .trainerprofile img{
+        width: 85%;
+    }
+    .trainercontent{
+        width: 100%;
     }
 
 
